@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Depression Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Depression Predictor</h1>
+            <img src="{{ url_for('static', filename='images/depression.jpg') }}" alt="Depression Image" class="header-img">
+
+        </header>
+
+        <form id="prediction-form">
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="academic_pressure">Academic Pressure (1-10)</label>
+                <input type="number" id="academic_pressure" name="academic_pressure" min="1" max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cgpa">CGPA</label>
+                <input type="number" id="cgpa" name="cgpa" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="study_satisfaction">Study Satisfaction (1-10)</label>
+                <input type="number" id="study_satisfaction" name="study_satisfaction" min="1" max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sleep_duration">Sleep Duration (hours)</label>
+                <input type="number" id="sleep_duration" name="sleep_duration" step="0.1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dietary_habits">Dietary Habits</label>
+                <select id="dietary_habits" name="dietary_habits">
+                    <option value="Healthy">Healthy</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Unhealthy">Unhealthy</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="degree">Degree</label>
+                <select id="degree" name="degree">
+                    <option value="B.Pharm">B.Pharm</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.A">B.A</option>
+                    <option value="BCA">BCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="PhD">PhD</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="have_you_ever_had_suicidal_thoughts_?">Have you ever had suicidal thoughts?</label>
+                <select id="have_you_ever_had_suicidal_thoughts_?" name="have_you_ever_had_suicidal_thoughts_?">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="work/study_hours">Work/Study Hours (per week)</label>
+                <input type="number" id="work/study_hours" name="work/study_hours" required>
+            </div>
+
+            <div class="form-group">
+                <label for="financial_stress">Financial Stress (1-10)</label>
+                <input type="number" id="financial_stress" name="financial_stress" min="1" max="10" required>
+            </div>
+
+            <button type="submit" class="btn">Predict</button>
+        </form>
+
+        <div id="result" class="result">
+            <p id="prediction-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
