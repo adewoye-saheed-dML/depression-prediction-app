@@ -60,6 +60,7 @@ The project involves the following key steps:
 2. Build and run the Docker container:
    ```bash
    docker build -t depression_predict .
+   
    docker run -p 9696:9696 depression_predict
    
 3. Access the application locally: Open your browser and navigate to
@@ -69,6 +70,7 @@ The project involves the following key steps:
 ---
 
 ## Usage
+
 
 1.   Preprocess and train the dataset by running the script:
    ```bash
@@ -86,7 +88,7 @@ The project involves the following key steps:
 
 ## Model Details
 
-Algorithm: [Logistic Regression, Decision Tree, Random Forest, and XGBoost]
+- **Algorithm**: [Logistic Regression, Decision Tree, Random Forest, and XGBoost]
 
 Input Features: Processed features from the dataset.
 
