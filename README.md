@@ -69,15 +69,15 @@ The project involves the following key steps:
 
 
 1.   Preprocess and train the dataset by running the script:
-   ```bash
+      ```bash
       python3 train.py
 
 2.   Evaluate the model:
-   ```bash
+      ```bash
       python3 app.py
 
 3.   Use the Dockerized application for predictions through the local deployment:
-   ```bash
+      ```bash
       docker run -p 9696:9696 depression_predict
 
 ---
@@ -86,9 +86,9 @@ The project involves the following key steps:
 
 - **Algorithm**: [Logistic Regression, Decision Tree, Random Forest, and XGBoost]
 
-Input Features: Processed features from the dataset.
+- **Input Features**: Processed features from the dataset.
 
-Output: Binary classification (Depressed or Not Depressed).
+- **Output**: Binary classification (Depressed or Not Depressed).
 
 ---
 
