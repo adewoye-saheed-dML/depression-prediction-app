@@ -10,13 +10,9 @@ This repository contains a project that predicts whether a student will likely e
 3. [Technologies Used](#technologies-used)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [Dataset](#dataset)
-7. [Model Details](#model-details)
-8. [Results](#results)
-9. [Future Work](#future-work)
-10. [Contributing](#contributing)
-11. [License](#license)
-12. [Demo](#demo)
+6. [Model Details](#model-details)
+7. [Contributing](#contributing)
+8. [Demo](#demo)
 
 ---
 
@@ -74,15 +70,15 @@ The project involves the following key steps:
 
 1.   Preprocess and train the dataset by running the script:
    ```bash
-   python3 train.py
+      python3 train.py
 
 2.   Evaluate the model:
    ```bash
-   python3 app.py
+      python3 app.py
 
 3.   Use the Dockerized application for predictions through the local deployment:
    ```bash
-   docker run -p 9696:9696 depression_predict
+      docker run -p 9696:9696 depression_predict
 
 ---
 
