@@ -1,5 +1,5 @@
 
-readme_content = """# Student Depression Prediction Model
+## Student Depression Prediction Model
 
 This repository contains a project that predicts whether a student will likely experience depression based on various features. The model leverages data analysis and machine learning techniques to provide insights and help identify students who may need support.
 
@@ -55,7 +55,54 @@ The project involves the following key steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/adewoye-saheed-dML/student-depression-prediction.git
+   git clone https://github.com/adewoye-saheed-dML/depression-prediction-app.git
+   
+2. Build and run the Docker container:
+   ```bash
+   docker build -t depression_predict .
+   docker run -p 9696:9696 depression_predict
+   
+3. Access the application locally: Open your browser and navigate to
+   ```bash
+   http://localhost:9696
+   
+---
 
-cd student-depression-prediction
+## Usage
+
+1.   Preprocess and train the dataset by running the script:
+   ```bash
+   python3 train.py
+
+2.   Evaluate the model:
+   ```bash
+   python3 app.py
+
+3.   Use the Dockerized application for predictions through the local deployment:
+   ```bash
+   docker run -p 9696:9696 depression_predict
+
+---
+
+## Model Details
+
+Algorithm: [Logistic Regression, Decision Tree, Random Forest, and XGBoost]
+
+Input Features: Processed features from the dataset.
+
+Output: Binary classification (Depressed or Not Depressed).
+
+---
+
+## Contributing
+
+Contributions are welcome! If you’d like to contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## Demo
+
+Video Walkthrough
+
+
 
