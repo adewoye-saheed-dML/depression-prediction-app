@@ -84,7 +84,7 @@ The project involves the following key steps:
 
 ## Model Details
 
-- **Algorithm**: [Logistic Regression, Decision Tree, Random Forest, and XGBoost]
+- **Algorithm**: Logistic Regression, Decision Tree, Random Forest, and XGBoost
 
 - **Input Features**: Processed features from the dataset.
 
